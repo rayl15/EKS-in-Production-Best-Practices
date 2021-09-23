@@ -1,4 +1,4 @@
-# Chapter Instructions
+# Instructions for deployment
 
 ## Prerequisites
 ### Install tools
@@ -18,13 +18,13 @@
     terraform apply
 
 ### Create cluster VPC and network
-    cd packtclusters-vpc
+    cd clusters-vpc
     terraform workspace new prod1-vpc
     terraform init 
     terraform apply
 
 ### Create cluster resources
-    cd packtclusters
+    cd clusters
     terraform workspace new prod1                
     terraform init 
     terraform apply
@@ -38,18 +38,18 @@
 ## Destroy the infrastructure
 
 ### Destroy cluster resources
-    cd packtclusters
+    cd clusters
     terraform workspace select prod1                
     terraform init 
     terraform destroy
     
-### Create cluster VPC and network
-    cd packtclusters-vpc
+### Destroy cluster VPC and network
+    cd clusters-vpc
     terraform workspace select prod1-vpc
     terraform init 
     terraform destroy
     
-### Create terraform shared state
+### Destroy terraform shared state
     cd shared-state 
     terraform init 
     terraform destroy
