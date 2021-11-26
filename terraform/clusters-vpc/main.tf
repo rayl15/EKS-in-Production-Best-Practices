@@ -1,6 +1,8 @@
 locals {
   common_tags = {
     ManagedBy = "terraform"
+    Project = "eks-in-production"
+    Environment = "Test"
   }
 }
 
