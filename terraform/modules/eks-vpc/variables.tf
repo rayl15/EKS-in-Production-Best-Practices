@@ -16,6 +16,7 @@ variable "eks_public_subnets_prefix_list" {
 variable "clusters_name_prefix" {
   type = string
   description = "The EKS cluster name example my-project"
+  default = "aws"
 }
 
 variable "common_tags" {
