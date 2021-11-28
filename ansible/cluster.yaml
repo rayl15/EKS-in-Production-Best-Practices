@@ -17,3 +17,14 @@
     tags: aws-auth
   - import_tasks: tasks/namespaces.yaml
     tags: namespaces
+  - import_tasks: tasks/cni.yaml
+    tags: cni
+  - import_tasks: tasks/kube-proxy.yaml
+    tags: kube-proxy
+  - import_tasks: tasks/core-dns.yaml
+    tags: core-dns
+  - import_tasks: tasks/external-dns.yaml
+    tags: external-dns
+  - import_tasks: tasks/ingress-nginx.yaml
+    tags: ingress-nginx
+
